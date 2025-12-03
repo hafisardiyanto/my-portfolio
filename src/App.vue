@@ -4,30 +4,74 @@
     <header class="navbar">
       <div class="logo">Hafis Ardiyanto</div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Tentang</a>
-        <a href="#skills">Skill</a>
-        <a href="#projects">Project</a>
-        <a href="#education">Pendidikan</a>
-        <a href="#contact">Kontak</a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'home' }"
+          @click.prevent="setSection('home')"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'about' }"
+          @click.prevent="setSection('about')"
+        >
+          Tentang
+        </a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'skills' }"
+          @click.prevent="setSection('skills')"
+        >
+          Skill
+        </a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'projects' }"
+          @click.prevent="setSection('projects')"
+        >
+          Project
+        </a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'education' }"
+          @click.prevent="setSection('education')"
+        >
+          Pendidikan
+        </a>
+        <a
+          href="#"
+          :class="{ active: activeSection === 'contact' }"
+          @click.prevent="setSection('contact')"
+        >
+          Kontak
+        </a>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero / Home -->
+    <section
+      v-if="activeSection === 'home'"
+      id="home"
+      class="hero"
+    >
       <h1>Halo, saya <span class="highlight">Hafis Ardiyanto</span></h1>
       <h2>Fresh Graduate D3 Teknologi Informasi</h2>
       <p>
         Tertarik pada <strong>Web Development</strong> dengan fokus pada
         <strong>Vue.js</strong> dan pengembangan aplikasi berbasis web.
       </p>
-      <button @click="scrollToSection('projects')" class="btn-primary">
+      <button @click="setSection('projects')" class="btn-primary">
         Lihat Project Saya
       </button>
     </section>
 
     <!-- Tentang Saya -->
-    <section id="about" class="section">
+    <section
+      v-if="activeSection === 'about'"
+      id="about"
+      class="section"
+    >
       <h2>Tentang Saya</h2>
       <p>
         Saya adalah lulusan D3 Teknologi Informasi yang memiliki ketertarikan
@@ -43,35 +87,42 @@
     </section>
 
     <!-- Skill -->
-    <section id="skills" class="section">
-  <h2>Skill</h2>
-  <p class="section-subtitle">
-    Berikut gambaran level kemampuan saya dalam beberapa teknologi:
-  </p>
-
-  <div class="skill-graph">
-    <div
-      class="skill-graph-item"
-      v-for="skill in skillChart"
-      :key="skill.name"
+    <section
+      v-if="activeSection === 'skills'"
+      id="skills"
+      class="section"
     >
-      <div class="skill-graph-label">
-        <span>{{ skill.name }}</span>
-        <span>{{ skill.level }}%</span>
-      </div>
-      <div class="skill-graph-bar">
-        <div
-          class="skill-graph-bar-fill"
-          :style="{ width: skill.level + '%' }"
-        ></div>
-      </div>
-    </div>
-  </div>
-</section>
+      <h2>Skill</h2>
+      <p class="section-subtitle">
+        Berikut gambaran level kemampuan saya dalam beberapa teknologi:
+      </p>
 
+      <div class="skill-graph">
+        <div
+          class="skill-graph-item"
+          v-for="skill in skillChart"
+          :key="skill.name"
+        >
+          <div class="skill-graph-label">
+            <span>{{ skill.name }}</span>
+            <span>{{ skill.level }}%</span>
+          </div>
+          <div class="skill-graph-bar">
+            <div
+              class="skill-graph-bar-fill"
+              :style="{ width: skill.level + '%' }"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Project -->
-    <section id="projects" class="section">
+    <section
+      v-if="activeSection === 'projects'"
+      id="projects"
+      class="section"
+    >
       <h2>Project</h2>
       <div class="project-list">
         <article
@@ -106,25 +157,32 @@
     </section>
 
     <!-- Pendidikan -->
-    <section id="education" class="section">
+    <section
+      v-if="activeSection === 'education'"
+      id="education"
+      class="section"
+    >
       <h2>Pendidikan</h2>
       <div class="education-card">
-        <h3><strong>SD:</strong>SDN 4 GRESIK</h3>
-        <p><strong>Tahun:</strong>2010 - 2016 </p>
-        <h3><strong>Sekolah:</strong>SMP 2 KEBOMAS GRESIK</h3>
-        <p><strong>Tahun:</strong>2016 - 2019 </p>
-        <h3><strong>Jurusan:</strong>(Rekayasa Perangkat Lunak)</h3>
-        <p><strong >SMK:</strong>SMK SEMEN GRESIK</p>
-        <P><strong>Tahun:</strong>2019 - 2022 </P>
+        <h3><strong>SD:</strong> SDN 4 GRESIK</h3>
+        <p><strong>Tahun:</strong> 2010 - 2016 </p>
+        <h3><strong>Sekolah:</strong> SMP 2 KEBOMAS GRESIK</h3>
+        <p><strong>Tahun:</strong> 2016 - 2019 </p>
+        <h3><strong>Jurusan:</strong> (Rekayasa Perangkat Lunak)</h3>
+        <p><strong>SMK:</strong> SMK SEMEN GRESIK</p>
+        <p><strong>Tahun:</strong> 2019 - 2022 </p>
         <h3><strong>Prodi:</strong> Teknologi Informasi</h3>
-        <p><strong>Kampus:</strong> POLTEKSI(Politeknik Semen Indonesia) </p>
-
+        <p><strong>Kampus:</strong> POLTEKSI (Politeknik Semen Indonesia)</p>
         <p><strong>Tahun:</strong> 2022 – 2025 </p>
       </div>
     </section>
 
     <!-- Kontak -->
-    <section id="contact" class="section">
+    <section
+      v-if="activeSection === 'contact'"
+      id="contact"
+      class="section"
+    >
       <h2>Kontak</h2>
       <p>Silakan hubungi saya melalui:</p>
       <ul class="contact-list">
@@ -143,6 +201,14 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+const activeSection = ref("home"); // default tampilan awal: Home
+
+const setSection = (section) => {
+  activeSection.value = section;
+};
+
 const skillChart = [
   { name: "HTML & CSS", level: 95 },
   { name: "JavaScript", level: 90 },
@@ -188,11 +254,4 @@ const projects = [
     },
   },
 ];
-
-const scrollToSection = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
