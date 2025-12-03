@@ -204,7 +204,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      © {{ new Date().getFullYear() }} Hafis Ardiyanto 
+       {{ new Date().getFullYear() }} Hafis Ardiyanto 
     </footer>
   </div>
 </template>
