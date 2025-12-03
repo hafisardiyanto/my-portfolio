@@ -213,7 +213,7 @@
 import { ref } from "vue";
 // pastikan nama file dan ekstensi SAMA persis dengan yang ada di folder
 // misal file: src/assets/Hafis.JPG
-import hafisPhoto from "src/assets/Hafis.jpg";
+import hafisPhoto from "./assets/Hafis.jpg";
 
 const activeSection = ref("home"); // default tampilan awal: Home
 
