@@ -188,7 +188,7 @@
       <ul class="contact-list">
         <li><strong>Email:</strong> hafisardiyanto19@gmail.com</li>
         <li><strong>WhatsApp:</strong> 085748174062</li>
-        <li><strong>GitHub:</strong> github.com/username</li>
+        <li><strong>GitHub:</strong> https://github.com/hafisardiyanto</li>
         <li><strong>LinkedIn:</strong> linkedin.com/in/username</li>
       </ul>
     </section>
