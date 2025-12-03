@@ -49,53 +49,40 @@
       </nav>
     </header>
 
-    <!-- Hero / Home -->
-    <section
-      v-if="activeSection === 'home'"
-      id="home"
-      class="hero"
-    >
+    <!-- Home Section -->
+    <section v-if="activeSection === 'home'" class="hero">
+      <img :src="profileImage" alt="Foto Hafis" class="profile-photo" />
+
       <h1>Halo, saya <span class="highlight">Hafis Ardiyanto</span></h1>
       <h2>Fresh Graduate D3 Teknologi Informasi</h2>
       <p>
         Tertarik pada <strong>Web Development</strong> dengan fokus pada
         <strong>Vue.js</strong> dan pengembangan aplikasi berbasis web.
       </p>
+
       <button @click="setSection('projects')" class="btn-primary">
         Lihat Project Saya
       </button>
     </section>
 
-    <!-- Tentang Saya -->
-    <section
-      v-if="activeSection === 'about'"
-      id="about"
-      class="section"
-    >
+    <!-- Tentang -->
+    <section v-if="activeSection === 'about'" class="section">
       <h2>Tentang Saya</h2>
       <p>
         Saya adalah lulusan D3 Teknologi Informasi yang memiliki ketertarikan
-        pada pengembangan aplikasi web. Terbiasa menggunakan HTML, CSS,
+        pada pengembangan aplikasi web, terbiasa menggunakan HTML, CSS,
         JavaScript, serta framework seperti Vue.js dan Laravel.
       </p>
       <p>
-        Saya senang belajar teknologi baru, mengerjakan project, dan terbuka
-        terhadap feedback untuk terus berkembang. Saat ini saya sedang mencari
-        kesempatan kerja sebagai <strong>Junior Web Developer</strong> atau
-        <strong>Frontend Developer</strong>.
+        Saya senang mempelajari teknologi baru dan terbuka dengan feedback untuk
+        berkembang sebagai <strong>Web Developer</strong>.
       </p>
     </section>
 
     <!-- Skill -->
-    <section
-      v-if="activeSection === 'skills'"
-      id="skills"
-      class="section"
-    >
+    <section v-if="activeSection === 'skills'" class="section">
       <h2>Skill</h2>
-      <p class="section-subtitle">
-        Berikut gambaran level kemampuan saya dalam beberapa teknologi:
-      </p>
+      <p class="section-subtitle">Berikut gambaran level kemampuan saya:</p>
 
       <div class="skill-graph">
         <div
@@ -118,12 +105,9 @@
     </section>
 
     <!-- Project -->
-    <section
-      v-if="activeSection === 'projects'"
-      id="projects"
-      class="section"
-    >
+    <section v-if="activeSection === 'projects'" class="section">
       <h2>Project</h2>
+
       <div class="project-list">
         <article
           class="project-card"
@@ -136,74 +120,63 @@
           <p class="tech-stack">
             <strong>Teknologi:</strong> {{ project.tech }}
           </p>
+
           <div v-if="project.links" class="project-links">
-            <a
-              v-if="project.links.demo"
-              :href="project.links.demo"
-              target="_blank"
-            >
-              Demo
-            </a>
+            <a v-if="project.links.demo" :href="project.links.demo" target="_blank">Demo</a>
             <a
               v-if="project.links.github"
               :href="project.links.github"
               target="_blank"
-            >
-              GitHub
-            </a>
+            >GitHub</a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- Pendidikan -->
-    <section
-      v-if="activeSection === 'education'"
-      id="education"
-      class="section"
-    >
+    <section v-if="activeSection === 'education'" class="section">
       <h2>Pendidikan</h2>
+
       <div class="education-card">
         <h3><strong>SD:</strong> SDN 4 GRESIK</h3>
-        <p><strong>Tahun:</strong> 2010 - 2016 </p>
-        <h3><strong>Sekolah:</strong> SMP 2 KEBOMAS GRESIK</h3>
-        <p><strong>Tahun:</strong> 2016 - 2019 </p>
-        <h3><strong>Jurusan:</strong> (Rekayasa Perangkat Lunak)</h3>
-        <p><strong>SMK:</strong> SMK SEMEN GRESIK</p>
-        <p><strong>Tahun:</strong> 2019 - 2022 </p>
-        <h3><strong>Prodi:</strong> Teknologi Informasi</h3>
-        <p><strong>Kampus:</strong> POLTEKSI (Politeknik Semen Indonesia)</p>
-        <p><strong>Tahun:</strong> 2022 – 2025 </p>
+        <p><strong>Tahun:</strong> 2010 - 2016</p>
+
+        <h3><strong>SMP:</strong> SMP 2 KEBOMAS GRESIK</h3>
+        <p><strong>Tahun:</strong> 2016 - 2019</p>
+
+        <h3><strong>SMK:</strong> SMK SEMEN GRESIK</h3>
+        <p><strong>Jurusan:</strong> RPL</p>
+        <p><strong>Tahun:</strong> 2019 - 2022</p>
+
+        <h3><strong>Kuliah:</strong> Politeknik Semen Indonesia</h3>
+        <p><strong>Prodi:</strong> Teknologi Informasi</p>
+        <p><strong>Tahun:</strong> 2022 – 2025</p>
       </div>
     </section>
 
     <!-- Kontak -->
-    <section
-      v-if="activeSection === 'contact'"
-      id="contact"
-      class="section"
-    >
+    <section v-if="activeSection === 'contact'" class="section">
       <h2>Kontak</h2>
-      <p>Silakan hubungi saya melalui:</p>
       <ul class="contact-list">
         <li><strong>Email:</strong> hafisardiyanto19@gmail.com</li>
         <li><strong>WhatsApp:</strong> 085748174062</li>
-        <li><strong>GitHub:</strong> https://github.com/hafisardiyanto</li>
+        <li><strong>GitHub:</strong> github.com/username</li>
         <li><strong>LinkedIn:</strong> linkedin.com/in/username</li>
       </ul>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      © {{ new Date().getFullYear() }} Hafis Ardiyanto 
+      © {{ new Date().getFullYear() }} Hafis Ardiyanto · Dibuat dengan Vue.js
     </footer>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import profileImage from "@/assets/Hafis.jpg"; // FOTO KAMU
 
-const activeSection = ref("home"); // default tampilan awal: Home
+const activeSection = ref("home");
 
 const setSection = (section) => {
   activeSection.value = section;
@@ -216,42 +189,23 @@ const skillChart = [
   { name: "PHP dasar", level: 85 },
   { name: "Laravel dasar", level: 85 },
   { name: "MySQL", level: 80 },
-  { name: "Git & GitHub", level: 85 },
+  { name: "Git & GitHub", level: 85 }
 ];
 
 const projects = [
   {
-    title: "Sistem Absensi Karyawan Berbasis Web dengan GPS",
+    title: "Sistem Absensi Berbasis GPS",
     role: "Fullstack Developer",
-    description:
-      "Aplikasi absensi yang mencatat kehadiran karyawan berdasarkan lokasi (geolokasi) dan waktu. Memiliki fitur login, absensi, dan laporan sederhana.",
-    tech: "Laravel, MySQL, Bootstrap, JavaScript",
-    links: {
-      demo: "",
-      github: "",
-    },
+    description: "Absensi realtime berdasarkan lokasi.",
+    tech: "Laravel, MySQL, Bootstrap",
+    links: {}
   },
   {
     title: "Warehouse Management System",
-    role: "Fullstack Developper",
-    description:
-      "Aplikasi web untuk mengelola produk, stok, dan transaksi penjualan dengan tampilan yang sederhana dan responsif.",
-    tech: "Vue.js, REST API Laravel, Axios, CSS",
-    links: {
-      demo: "",
-      github: "",
-    },
-  },
-  {
-    title: "Website Portofolio Pribadi",
-    role: "Fullstack",
-    description:
-      "Website satu halaman untuk menampilkan profil, keahlian, dan project pribadi sebagai fresh graduate Teknologi Informasi.",
-    tech: "Vue.js, HTML, CSS",
-    links: {
-      demo: "",
-      github: "",
-    },
-  },
+    role: "Fullstack Developer",
+    description: "Manajemen stok & produk sederhana.",
+    tech: "Vue.js, Laravel API",
+    links: {}
+  }
 ];
 </script>
