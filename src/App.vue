@@ -204,7 +204,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      © {{ new Date().getFullYear() }} Hafis Ardiyanto · Dibuat dengan Vue.js
+      © {{ new Date().getFullYear() }} Hafis Ardiyanto 
     </footer>
   </div>
 </template>
