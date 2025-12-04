@@ -50,18 +50,10 @@
     </header>
 
     <!-- Hero / Home -->
-    <section
-      v-if="activeSection === 'home'"
-      id="home"
-      class="hero"
-    >
+    <section v-if="activeSection === 'home'" id="home" class="hero">
       <!-- FOTO DI SINI -->
       <div class="hero-photo-wrapper">
-        <img
-          :src="hafisPhoto"
-          alt="Foto Hafis Ardiyanto"
-          class="hero-photo"
-        />
+        <img :src="hafisPhoto" alt="Foto Hafis Ardiyanto" class="hero-photo" />
       </div>
 
       <h1>Halo, saya <span class="highlight">Hafis Ardiyanto</span></h1>
@@ -70,17 +62,27 @@
         Tertarik pada <strong>Web Development</strong> dengan fokus pada
         <strong>Vue.js</strong> dan pengembangan aplikasi berbasis web.
       </p>
-      <button @click="setSection('projects')" class="btn-primary">
-        Lihat Project Saya
-      </button>
+
+      <div class="hero-actions">
+        <button @click="setSection('projects')" class="btn-primary">
+          Lihat Project Saya
+        </button>
+
+        <!-- Tombol CV: buka PDF di tab baru dan juga bisa didownload -->
+        <a
+          :href="cvPdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-secondary"
+          download
+        >
+          Unduh / Lihat CV
+        </a>
+      </div>
     </section>
 
     <!-- Tentang Saya -->
-    <section
-      v-if="activeSection === 'about'"
-      id="about"
-      class="section"
-    >
+    <section v-if="activeSection === 'about'" id="about" class="section">
       <h2>Tentang Saya</h2>
       <p>
         Saya adalah lulusan D3 Teknologi Informasi yang memiliki ketertarikan
@@ -96,81 +98,44 @@
     </section>
 
     <!-- Skill -->
-    <section
-      v-if="activeSection === 'skills'"
-      id="skills"
-      class="section"
-    >
+    <section v-if="activeSection === 'skills'" id="skills" class="section">
       <h2>Skill</h2>
       <p class="section-subtitle">
         Berikut gambaran level kemampuan saya dalam beberapa teknologi:
       </p>
 
       <div class="skill-graph">
-        <div
-          class="skill-graph-item"
-          v-for="skill in skillChart"
-          :key="skill.name"
-        >
+        <div class="skill-graph-item" v-for="skill in skillChart" :key="skill.name">
           <div class="skill-graph-label">
             <span>{{ skill.name }}</span>
             <span>{{ skill.level }}%</span>
           </div>
           <div class="skill-graph-bar">
-            <div
-              class="skill-graph-bar-fill"
-              :style="{ width: skill.level + '%' }"
-            ></div>
+            <div class="skill-graph-bar-fill" :style="{ width: skill.level + '%' }"></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Project -->
-    <section
-      v-if="activeSection === 'projects'"
-      id="projects"
-      class="section"
-    >
+    <section v-if="activeSection === 'projects'" id="projects" class="section">
       <h2>Project</h2>
       <div class="project-list">
-        <article
-          class="project-card"
-          v-for="project in projects"
-          :key="project.title"
-        >
+        <article class="project-card" v-for="project in projects" :key="project.title">
           <h3>{{ project.title }}</h3>
           <p class="project-role"><strong>Peran:</strong> {{ project.role }}</p>
           <p>{{ project.description }}</p>
-          <p class="tech-stack">
-            <strong>Teknologi:</strong> {{ project.tech }}
-          </p>
+          <p class="tech-stack"><strong>Teknologi:</strong> {{ project.tech }}</p>
           <div v-if="project.links" class="project-links">
-            <a
-              v-if="project.links.demo"
-              :href="project.links.demo"
-              target="_blank"
-            >
-              Demo
-            </a>
-            <a
-              v-if="project.links.github"
-              :href="project.links.github"
-              target="_blank"
-            >
-              GitHub
-            </a>
+            <a v-if="project.links.demo" :href="project.links.demo" target="_blank">Demo</a>
+            <a v-if="project.links.github" :href="project.links.github" target="_blank">GitHub</a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- Pendidikan -->
-    <section
-      v-if="activeSection === 'education'"
-      id="education"
-      class="section"
-    >
+    <section v-if="activeSection === 'education'" id="education" class="section">
       <h2>Pendidikan</h2>
       <div class="education-card">
         <h3><strong>SD:</strong> SDN 4 GRESIK</h3>
@@ -187,11 +152,7 @@
     </section>
 
     <!-- Kontak -->
-    <section
-      v-if="activeSection === 'contact'"
-      id="contact"
-      class="section"
-    >
+    <section v-if="activeSection === 'contact'" id="contact" class="section">
       <h2>Kontak</h2>
       <p>Silakan hubungi saya melalui:</p>
       <ul class="contact-list">
@@ -203,23 +164,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-       {{ new Date().getFullYear() }} Hafis Ardiyanto 
-    </footer>
+    <footer class="footer">© {{ new Date().getFullYear() }} Hafis Ardiyanto</footer>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-// pastikan nama file dan ekstensi SAMA persis dengan yang ada di folder
-// misal file: src/assets/Hafis.JPG
+
+/*
+  Pastikan file-file ini ada di:
+  src/assets/Hafis.jpg
+  src/assets/CV_Hafis.pdf
+  (rename file PDF kalau perlu untuk menghilangkan spasi)
+*/
 import hafisPhoto from "./assets/Hafis.jpg";
+import cvPdf from "./assets/CV_Hafis.pdf";
 
-const activeSection = ref("home"); // default tampilan awal: Home
-
-const setSection = (section) => {
-  activeSection.value = section;
-};
+const activeSection = ref("home");
+const setSection = (section) => { activeSection.value = section; };
 
 const skillChart = [
   { name: "HTML & CSS", level: 95 },
@@ -238,10 +200,7 @@ const projects = [
     description:
       "Aplikasi absensi yang mencatat kehadiran karyawan berdasarkan lokasi (geolokasi) dan waktu. Memiliki fitur login, absensi, dan laporan sederhana.",
     tech: "Laravel, MySQL, Bootstrap, JavaScript",
-    links: {
-      demo: "",
-      github: "",
-    },
+    links: { demo: "", github: "" },
   },
   {
     title: "Warehouse Management System",
@@ -249,10 +208,7 @@ const projects = [
     description:
       "Aplikasi web untuk mengelola produk, stok, dan transaksi penjualan dengan tampilan yang sederhana dan responsif.",
     tech: "Vue.js, REST API Laravel, Axios, CSS",
-    links: {
-      demo: "",
-      github: "",
-    },
+    links: { demo: "", github: "" },
   },
   {
     title: "Website Portofolio Pribadi",
@@ -260,10 +216,7 @@ const projects = [
     description:
       "Website satu halaman untuk menampilkan profil, keahlian, dan project pribadi sebagai fresh graduate Teknologi Informasi.",
     tech: "Vue.js, HTML, CSS",
-    links: {
-      demo: "",
-      github: "",
-    },
+    links: { demo: "", github: "" },
   },
 ];
 </script>
