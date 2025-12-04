@@ -178,7 +178,7 @@ import { ref } from "vue";
   (rename file PDF kalau perlu untuk menghilangkan spasi)
 */
 import hafisPhoto from "./assets/Hafis.jpg";
-import cvPdf from "./assets/CV_Hafis.pdf";
+import cvPdf from "./assets/CV Hafis.pdf";
 
 const activeSection = ref("home");
 const setSection = (section) => { activeSection.value = section; };
