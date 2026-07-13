@@ -5,42 +5,42 @@
       <div class="logo">Hafis Ardiyanto</div>
       <nav>
         <a
-          href="#"
+          href="/home"
           :class="{ active: activeSection === 'home' }"
           @click.prevent="setSection('home')"
         >
           Home
         </a>
         <a
-          href="#"
+          href="/about"
           :class="{ active: activeSection === 'about' }"
           @click.prevent="setSection('about')"
         >
           Tentang
         </a>
         <a
-          href="#"
+          href="/skills"
           :class="{ active: activeSection === 'skills' }"
           @click.prevent="setSection('skills')"
         >
           Skill
         </a>
         <a
-          href="#"
+          href="/projects"
           :class="{ active: activeSection === 'projects' }"
           @click.prevent="setSection('projects')"
         >
           Project
         </a>
         <a
-          href="#"
+          href="/education"
           :class="{ active: activeSection === 'education' }"
           @click.prevent="setSection('education')"
         >
           Pendidikan
         </a>
         <a
-          href="#"
+          href="/contact"
           :class="{ active: activeSection === 'contact' }"
           @click.prevent="setSection('contact')"
         >
@@ -58,9 +58,8 @@
 
       <h1>Halo, saya <span class="highlight">Hafis Ardiyanto</span></h1>
       <h2>Fresh Graduate D3 Teknologi Informasi</h2>
-      <p>
-        Tertarik pada <strong>Web Development</strong> dengan fokus pada
-        <strong>Vue.js</strong> dan pengembangan aplikasi berbasis web.
+      <p class="hero-desc">
+        Saya merupakan lulusan D3 Teknologi Informasi yang memiliki pengalaman sebagai System Implementor dan System Analyst pada perusahaan pengembang software. Selama bekerja saya terlibat dalam analisis kebutuhan sistem, implementasi aplikasi, pengujian fitur, penyusunan dokumentasi, serta koordinasi dengan tim developer untuk memastikan aplikasi berjalan sesuai kebutuhan bisnis. Pengalaman tersebut membuat saya memahami proses pengembangan perangkat lunak secara menyeluruh. Saya menjadi freelance programmer & pernah membantu mengembangkan beberapa proyek milik mahasiswa, adalah pribadi yang disiplin, mudah beradaptasi, memiliki kemampuan analitis yang baik, dan selalu berusaha memberikan hasil kerja yang berkualitas melalui pembelajaran yang berkelanjutan.
       </p>
 
       <div class="hero-actions">
@@ -82,37 +81,84 @@
     </section>
 
     <!-- Tentang Saya -->
+    <!-- Tentang Saya / Resume -->
     <section v-if="activeSection === 'about'" id="about" class="section">
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah lulusan D3 Teknologi Informasi yang memiliki ketertarikan
-        pada pengembangan aplikasi web. Terbiasa menggunakan HTML, CSS,
-        JavaScript, serta framework seperti Vue.js dan Laravel.
-      </p>
-      <p>
-        Saya senang belajar teknologi baru, mengerjakan project, dan terbuka
-        terhadap feedback untuk terus berkembang. Saat ini saya sedang mencari
-        kesempatan kerja sebagai <strong>Junior Web Developer</strong> atau
-        <strong>Frontend Developer</strong>.
-      </p>
+      <div class="about-header">
+        <h2>Profil & Pengalaman</h2>
+        <p class="about-intro">
+          Fresh Graduate D3 Teknologi Informasi dengan pengalaman sebagai System Implementor dan Junior Programmer. Memiliki pengalaman dalam pengembangan aplikasi berbasis web menggunakan Laravel serta implementasi sistem di lingkungan client. Terbiasa melakukan analisis kebutuhan, pengujian sistem, serta pelatihan pengguna. Memiliki ketertarikan pada pengembangan sistem logistik dan solusi berbasis teknologi yang efisien.
+        </p>
+      </div>
+
+      <div class="resume-grid">
+        <div class="resume-column">
+          <h3 class="resume-title">Pengalaman Kerja</h3>
+          <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025 – Now</div>
+              <h4 class="timeline-company">CV PilarMedia Indonesia</h4>
+              <h5 class="timeline-role">System Implementor / System Analyst</h5>
+              <ul class="timeline-desc">
+                <li>Memulai sebagai QA System pada aplikasi Solog versi 3, melakukan testing, validasi sistem, dan identifikasi bug.</li>
+                <li>Berperan sebagai Implementor untuk solog versi 2, melakukan implementasi & training user.</li>
+                <li>Melakukan analisa kebutuhan system berdasarkan proses bisnis client.</li>
+                <li>Berkontribusi dalam peningkatan system dari hasil testing & feedback lapangan.</li>
+                <li>Bertanggung jawab dalam pembangunan aplikasi SaaS logistik (Sendpick) dari tahap awal.</li>
+                <li>Melakukan analisis sistem dan memberikan dukungan teknis untuk sistem logistik Solog.</li>
+              </ul>
+            </div>
+            
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022 – 2022</div>
+              <h4 class="timeline-company">Kopi Kota/Jagadjawi</h4>
+              <h5 class="timeline-role">Crew Outlet dan Cashier</h5>
+              <ul class="timeline-desc">
+                <li>Memberikan pelayanan pelanggan dengan cepat.</li>
+                <li>Menjaga kualitas produk sesuai standar outlet.</li>
+                <li>Menangani transaksi pembayaran sebagai kasir dengan teliti.</li>
+                <li>Mendukung operasional tim untuk menjaga kepuasan pelanggan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-column">
+          <h3 class="resume-title">Sertifikasi</h3>
+          <div class="certification-card">
+            <h4>Junior Web Developer - BNSP</h4>
+            <p class="cert-cred"><strong>Credential ID:</strong> TIK 1565 40053 2025</p>
+            <a href="https://drive.google.com/drive/u/0/folders/13CM96KFQwoklEnhMkQ-N4D7-54EYiyhU" target="_blank" class="cert-link">Lihat Sertifikat</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skill -->
     <section v-if="activeSection === 'skills'" id="skills" class="section">
-      <h2>Skill</h2>
-      <p class="section-subtitle">
-        Berikut gambaran level kemampuan saya dalam beberapa teknologi:
-      </p>
+      <div class="skills-header">
+        <h2>Kemampuan Teknis</h2>
+        <p class="section-subtitle">
+          Keahlian teknis dan alat pengembangan yang biasa saya gunakan.
+        </p>
+      </div>
 
-      <div class="skill-graph">
-        <div class="skill-graph-item" v-for="skill in skillChart" :key="skill.name">
-          <div class="skill-graph-label">
-            <span>{{ skill.name }}</span>
-            <span>{{ skill.level }}%</span>
-          </div>
-          <div class="skill-graph-bar">
-            <div class="skill-graph-bar-fill" :style="{ width: skill.level + '%' }"></div>
-          </div>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3>Technical Skills</h3>
+          <ul class="skills-list">
+            <li v-for="skill in technicalSkills" :key="skill">{{ skill }}</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Tools & Technologies</h3>
+          <ul class="skills-list">
+            <li v-for="tool in toolsAndTech" :key="tool">{{ tool }}</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -169,28 +215,60 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 /*
   Pastikan file-file ini ada di:
   src/assets/Hafis.jpg
-  src/assets/CV_Hafis.pdf
-  (rename file PDF kalau perlu untuk menghilangkan spasi)
+  src/assets/CV_Hafis_Ardiyanto.pdf
 */
 import hafisPhoto from "./assets/Hafis.jpg";
-import cvPdf from "./assets/CV Hafis.pdf";
+import cvPdf from "./assets/CV_Hafis_Ardiyanto.pdf";
 
 const activeSection = ref("home");
-const setSection = (section) => { activeSection.value = section; };
 
-const skillChart = [
-  { name: "HTML & CSS", level: 95 },
-  { name: "JavaScript", level: 90 },
-  { name: "Vue.js", level: 80 },
-  { name: "PHP dasar", level: 85 },
-  { name: "Laravel dasar", level: 85 },
-  { name: "MySQL", level: 80 },
-  { name: "Git & GitHub", level: 85 },
+const setSection = (section) => { 
+  activeSection.value = section;
+  window.history.pushState(null, '', '/' + section);
+};
+
+onMounted(() => {
+  const path = window.location.pathname.replace('/', '');
+  const validSections = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
+  
+  if (validSections.includes(path)) {
+    activeSection.value = path;
+  } else if (path === '') {
+    window.history.replaceState(null, '', '/home');
+  }
+
+  window.addEventListener('popstate', () => {
+    const currentPath = window.location.pathname.replace('/', '');
+    if (validSections.includes(currentPath)) {
+      activeSection.value = currentPath;
+    } else {
+      activeSection.value = 'home';
+    }
+  });
+});
+
+const technicalSkills = [
+  "System Analysis",
+  "Qa Testing",
+  "Client Support & Training",
+  "Problem Solving",
+  "Technical Documentation",
+  "Laravel",
+  "vue.js/react",
+  "MySQL",
+  "Rest API Development"
+];
+
+const toolsAndTech = [
+  "Git/Github",
+  "DBeaver",
+  "Laragon",
+  "AI-assisted Development (Antigravity, ChatGPT, dll)"
 ];
 
 const projects = [
