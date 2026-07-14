@@ -1,0 +1,40 @@
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  font-size: 0.9rem;
+}
+
+.project-role {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.project-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
