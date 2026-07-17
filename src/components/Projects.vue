@@ -27,21 +27,20 @@ const projects = [
     links: { demo: "", github: "" },
   },
   {
-    title: "Warehouse Management System",
+    title: "Warehouse Management Stok",
     role: "Fullstack Developper",
     description:
-      "Aplikasi web untuk mengelola produk, stok, dan transaksi penjualan dengan tampilan yang sederhana dan responsif.",
-    tech: "Vue.js, REST API Laravel, Axios, CSS",
-    links: { demo: "", github: "" },
+      "Aplikasi web untuk mengelola produk,pencatatan stok & dengan aplikasi sederhana.",
+    tech: "Laravel,CSS,Bootstrap",
+    links: { demo: "http://119.28.107.155:8082" },
   },
-  {
-    title: "Website Portofolio Pribadi",
-    role: "Fullstack",
-    description:
-      "Website satu halaman untuk menampilkan profil, keahlian, dan project pribadi sebagai fresh graduate Teknologi Informasi.",
-    tech: "Vue.js, HTML, CSS",
-    links: { demo: "", github: "" },
-  },
+   {
+    title: "Aplikasi Kasir",
+    role: "Fullstack developper",
+    description: "Aplikasi Web Untuk gudang mulai dari pencatatan stok gudang,nama supplier barang/item,Metode pembayaran,bisa menambahkan pegawai(kasir) serta login pegawai(kasir),absen pegawai(kasir),Transaksi Kasir,laporan Penjualan,Dashboard" ,
+    tech: "Laravel,CSS & JavaScript",
+    links: { demo: "http://119.28.107.155:8080" }
+   }
 ];
 </script>
 
