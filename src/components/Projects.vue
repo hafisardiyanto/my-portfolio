@@ -1,9 +1,6 @@
 <template>
   <section id="projects" class="section">
     <h2>Project</h2>
-    <div class="cert-validation" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-      <p>Cek Validasi Sertifikat: <a href="https://sertifikasi.lspdigital.id/validasi-sertifikat" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; text-decoration: none; font-weight: 500;">https://sertifikasi.lspdigital.id/validasi-sertifikat</a></p>
-    </div>
     <div class="project-list">
       <article class="project-card" v-for="project in projects" :key="project.title">
         <h3>{{ project.title }}</h3>
