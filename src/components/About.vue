@@ -46,7 +46,7 @@
       <div class="resume-column">
         <h3 class="resume-title">Sertifikasi</h3>
         <div class="certification-card">
-          <h4>Junior Web Developer - LSP</h4>
+          <h4>Junior Web Developer - LSP  </h4>
           <p class="cert-cred"><strong>Credential ID:</strong> TIK 1565 40053 2025</p>
           <div class="cert-links">
             <a href="https://drive.google.com/drive/u/0/folders/13CM96KFQwoklEnhMkQ-N4D7-54EYiyhU" target="_blank" class="cert-link">Lihat Sertifikat</a>
