@@ -32,7 +32,7 @@ const projects = [
     description:
       "Aplikasi web untuk mengelola produk,pencatatan stok & dengan aplikasi sederhana.",
     tech: "Laravel,CSS,Bootstrap",
-    links: { demo: "http://43.133.157.230:8082/login" },
+    links: { demo: "http://43.133.157.230:8082" },
   },
    {
     title: "Aplikasi Kasir",
