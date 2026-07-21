@@ -24,7 +24,7 @@ const projects = [
     description:
       "Aplikasi absensi yang mencatat kehadiran karyawan berdasarkan lokasi (geolokasi) dan waktu. Memiliki fitur login, absensi, dan laporan sederhana.",
     tech: "Laravel, MySQL, Bootstrap, JavaScript",
-    links: { demo: "", github: "" },
+    links: { demo: "http://43.133.157.230:8084/", },
   },
   {
     title: "Warehouse Management Stok",
