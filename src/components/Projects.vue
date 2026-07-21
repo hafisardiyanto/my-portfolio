@@ -32,14 +32,14 @@ const projects = [
     description:
       "Aplikasi web untuk mengelola produk,pencatatan stok & dengan aplikasi sederhana.",
     tech: "Laravel,CSS,Bootstrap",
-    links: { demo: "http://119.28.107.155:8082" },
+    links: { demo: "http://43.133.157.230:8082/login" },
   },
    {
     title: "Aplikasi Kasir",
     role: "Fullstack developper",
     description: "Aplikasi Web Untuk gudang mulai dari pencatatan stok gudang,nama supplier barang/item,Metode pembayaran,bisa menambahkan pegawai(kasir) serta login pegawai(kasir),absen pegawai(kasir),Transaksi Kasir,laporan Penjualan,Dashboard" ,
     tech: "Laravel,CSS & JavaScript",
-    links: { demo: "http://43.133.157.230:8082/login" }
+    links: { demo: "http://43.133.157.230:8080/login" }
    }
 ];
 </script>
