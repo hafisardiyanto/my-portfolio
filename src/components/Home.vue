@@ -8,7 +8,7 @@
     <h1>Halo, saya <span class="highlight">Hafis Ardiyanto</span></h1>
     <h2>Fresh Graduate D3 Teknologi Informasi</h2>
     <p class="hero-desc">
-      Saya merupakan lulusan D3 Teknologi Informasi yang memiliki pengalaman sebagai System Implementor dan System Analyst pada perusahaan pengembang software. Selama bekerja saya terlibat dalam analisis kebutuhan sistem, implementasi aplikasi, pengujian fitur, penyusunan dokumentasi, serta koordinasi dengan tim developer untuk memastikan aplikasi berjalan sesuai kebutuhan bisnis. Pengalaman tersebut membuat saya memahami proses pengembangan perangkat lunak secara menyeluruh. Saya menjadi freelance programmer & pernah membantu mengembangkan beberapa proyek milik mahasiswa, adalah pribadi yang disiplin, mudah beradaptasi, memiliki kemampuan analitis yang baik, dan selalu berusaha memberikan hasil kerja yang berkualitas melalui pembelajaran yang berkelanjutan.
+      Saya merupakan lulusan D3 Teknologi Informasi yang memiliki pengalaman sebagai System Implementor dan System Analyst pada perusahaan pengembang software. Selama bekerja saya terlibat dalam analisis kebutuhan sistem, implementasi aplikasi, pengujian fitur, penyusunan dokumentasi, serta koordinasi dengan tim developer untuk memastikan aplikasi berjalan sesuai kebutuhan bisnis. Pengalaman tersebut membuat saya memahami proses pengembangan perangkat lunak secara menyeluruh. Saya menjadi freelance programmer, adalah pribadi yang disiplin, mudah beradaptasi, memiliki kemampuan analitis yang baik, dan selalu berusaha memberikan hasil kerja yang berkualitas melalui pembelajaran yang berkelanjutan.
     </p>
 
     <div class="hero-actions">
