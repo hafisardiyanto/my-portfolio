@@ -1,17 +1,45 @@
 <template>
   <section id="education" class="section">
-    <h2>Pendidikan</h2>
-    <div class="education-card">
-      <h3><strong>SD:</strong> SDN 4 GRESIK</h3>
-      <p><strong>Tahun:</strong> 2010 - 2016 </p>
-      <h3><strong>Sekolah:</strong> SMP 2 KEBOMAS GRESIK</h3>
-      <p><strong>Tahun:</strong> 2016 - 2019 </p>
-      <h3><strong>Jurusan:</strong> (Rekayasa Perangkat Lunak)</h3>
-      <p><strong>SMK:</strong> SMK SEMEN GRESIK</p>
-      <p><strong>Tahun:</strong> 2019 - 2022 </p>
-      <h3><strong>Prodi:</strong> Teknologi Informasi</h3>
-      <p><strong>Kampus:</strong> POLTEKSI (Politeknik Semen Indonesia)</p>
-      <p><strong>Tahun:</strong> 2022 – 2025 </p>
+    <div class="education-header">
+      <h2>Pendidikan</h2>
+      <p class="education-intro">Riwayat pendidikan formal yang telah saya tempuh.</p>
+    </div>
+    
+    <div class="timeline-container">
+      <div class="timeline">
+        <!-- Perguruan Tinggi -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 – 2025</div>
+          <h4 class="timeline-school">Politeknik Semen Indonesia (POLTEKSI)</h4>
+          <h5 class="timeline-major">D3 Teknologi Informasi</h5>
+          <ul class="timeline-desc">
+            <li><strong>IPK:</strong> 3.3</li>
+          </ul>
+        </div>
+        
+        <!-- SMK -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019 – 2022</div>
+          <h4 class="timeline-school">SMK Semen Gresik</h4>
+          <h5 class="timeline-major">Rekayasa Perangkat Lunak</h5>
+        </div>
+        
+        <!-- SMP -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2016 – 2019</div>
+          <h4 class="timeline-school">SMPN 2 Kebomas Gresik</h4>
+        </div>
+        
+        <!-- SD -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2010 – 2016</div>
+          <h4 class="timeline-school">SDN 4 Gresik</h4>
+        </div>
+      </div>
     </div>
   </section>
 </template>
