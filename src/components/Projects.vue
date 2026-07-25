@@ -22,7 +22,7 @@ const projects = [
     title: "Sistem Absensi Karyawan Berbasis Web dengan GPS",
     role: "Fullstack Developer",
     description:
-      "Aplikasi absensi yang mencatat kehadiran karyawan berdasarkan lokasi (geolokasi) dan waktu. Memiliki fitur login, absensi, dan laporan sederhana.",
+      "Mengembangkan aplikasi sistem absensi karyawan terintegrasi yang mencatat kehadiran (masuk/pulang) secara akurat memvalidasi berdasarkan koordinat lokasi (geolokasi radius) dan batasan waktu nyata (real-time). Fitur Utama: Autentikasi/Login multi-user (Admin & Pegawai), presensi menggunakan geolocation pemetaan, serta modul dasbor admin untuk manajemen pengguna, jam kerja, dan pelaporan (termasuk export rekapan ke Excel).",
     tech: "Laravel, MySQL, Bootstrap, JavaScript",
     links: { demo: "http://43.133.157.230:8084", },
   },
