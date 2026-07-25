@@ -38,7 +38,7 @@ const projects = [
     title: "Aplikasi Kasir",
     role: "Fullstack developper",
     description: "Aplikasi Web Untuk gudang mulai dari pencatatan stok gudang,nama supplier barang/item,Metode pembayaran,bisa menambahkan pegawai(kasir) serta login pegawai(kasir),absen pegawai(kasir),Transaksi Kasir,laporan Penjualan,Dashboard" ,
-    tech: "Laravel,CSS&JavaScript",
+    tech: "Laravel 11, MySQL, PHP 8.2, Bootstrap 5, JavaScript (jQuery), Blade, Docker, Nginx",
     links: { demo: "http://43.133.157.230:8080/login" }
    },
    {
