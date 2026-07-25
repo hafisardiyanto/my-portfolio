@@ -38,8 +38,15 @@ const projects = [
     title: "Aplikasi Kasir",
     role: "Fullstack developper",
     description: "Aplikasi Web Untuk gudang mulai dari pencatatan stok gudang,nama supplier barang/item,Metode pembayaran,bisa menambahkan pegawai(kasir) serta login pegawai(kasir),absen pegawai(kasir),Transaksi Kasir,laporan Penjualan,Dashboard" ,
-    tech: "Laravel,CSS & JavaScript",
+    tech: "Laravel,CSS&JavaScript",
     links: { demo: "http://43.133.157.230:8080/login" }
+   },
+   {
+    title: "Aplikasi Booking Rental Mobil",
+    role: "Fullstack Developer",
+    description: "Aplikasi penyewaan/booking mobil berbasis web yang dilengkapi dengan otomatisasi fitur notifikasi WhatsApp menggunakan API Foonte (Fontee) dan notifikasi Email menggunakan SMTP.",
+    tech: "Laravel, MySQL, Bootstrap,JavaScript",
+    links: { demo: "http://43.133.157.230:8088" }
    }
 ];
 </script>
