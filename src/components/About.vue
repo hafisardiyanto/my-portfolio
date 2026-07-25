@@ -11,7 +11,23 @@
       <div class="resume-column">
         <h3 class="resume-title">Pengalaman Kerja</h3>
         <div class="timeline">
-          <!-- Experience 1 -->
+          <!-- Experience 1 (Freelance) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 – Present</div>
+            <h4 class="timeline-company">Freelance</h4>
+            <h5 class="timeline-role">Fullstack Developer</h5>
+            <ul class="timeline-desc">
+              <li>Mengembangkan aplikasi berbasis web menggunakan Laravel dan Vue.js sesuai kebutuhan klien.</li>
+              <li>Membangun REST API menggunakan Laravel dan Node.js (Express.js).</li>
+              <li>Mendesain database MySQL dan PostgreSQL.</li>
+              <li>Melakukan deployment aplikasi menggunakan Docker, Nginx, dan Ubuntu VPS.</li>
+              <li>Mengintegrasikan layanan pihak ketiga seperti WhatsApp API dan Email SMTP.</li>
+              <li>Melakukan maintenance dan perbaikan bug.</li>
+            </ul>
+          </div>
+
+          <!-- Experience 2 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2025 – Now</div>
