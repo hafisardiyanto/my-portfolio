@@ -34,6 +34,7 @@ const technicalSkills = [
   "Technical Documentation",
   "PHP 8.x & Laravel",
   "Vue.js & React",
+  "Node.Js & Express",
   "HTML, CSS, JavaScript (jQuery)",
   "Bootstrap 5",
   "MySQL / DBMS",
