@@ -8,17 +8,10 @@
     </div>
 
     <div class="skills-grid">
-      <div class="skills-card">
-        <h3>Technical Skills</h3>
+      <div class="skills-card" v-for="category in skillCategories" :key="category.title">
+        <h3>{{ category.title }}</h3>
         <ul class="skills-list">
-          <li v-for="skill in technicalSkills" :key="skill">{{ skill }}</li>
-        </ul>
-      </div>
-
-      <div class="skills-card">
-        <h3>Tools & Technologies</h3>
-        <ul class="skills-list">
-          <li v-for="tool in toolsAndTech" :key="tool">{{ tool }}</li>
+          <li v-for="item in category.items" :key="item">{{ item }}</li>
         </ul>
       </div>
     </div>
@@ -26,30 +19,46 @@
 </template>
 
 <script setup>
-const technicalSkills = [
-  "System Analysis & Design",
-  "QA Testing & Debugging",
-  "Problem Solving",
-  "Client Support & Training",
-  "Technical Documentation",
-  "PHP 8.x & Laravel",
-  "Vue.js & React",
-  "Node.Js & Express",
-  "HTML, CSS, JavaScript (jQuery)",
-  "Bootstrap 5",
-  "MySQL / DBMS",
-  "REST API Development"
-];
-
-const toolsAndTech = [
-  "Git & GitHub",
-  "Docker & Podman",
-  "Linux VPS Administration (Ubuntu)",
-  "Web Servers (Nginx)",
-  "DBeaver / phpMyAdmin",
-  "Laragon",
-  "Postman (API Testing)",
-  "AI-Assisted Development"
+const skillCategories = [
+  {
+    title: "Languages",
+    items: ["PHP", "JavaScript", "SQL"]
+  },
+  {
+    title: "Frontend",
+    items: ["Vue.js", "React.js (Basic)"]
+  },
+  {
+    title: "Backend",
+    items: ["Laravel", "Node.js", "Express.js,REST API Development,JWT Authentication"]
+  },
+  {
+    title: "Database & ORM",
+    items: ["MySQL", "PostgreSQL", "Prisma ORM", "Eloquent ORM"]
+  },
+  {
+    title: "DevOps & Tools",
+    items: [
+      "Docker",
+      "Podman",
+      "Nginx",
+      "Ubuntu VPS",
+      "Git & GitHub",
+      "Postman",
+      "Docker Compose",
+      "DBeaver"
+    ]
+  },
+  {
+    title: "System Analysis & QA",
+    items: [
+      "System Analysis",
+      "QA Testing",
+      "Requirement Analysis",
+      "Technical Documentation",
+      "Client Support & Training"
+    ]
+  }
 ];
 </script>
 
