@@ -27,22 +27,28 @@
 
 <script setup>
 const technicalSkills = [
-  "System Analysis",
-  "Qa Testing",
-  "Client Support & Training",
+  "System Analysis & Design",
+  "QA Testing & Debugging",
   "Problem Solving",
+  "Client Support & Training",
   "Technical Documentation",
-  "Laravel",
-  "vue.js/react",
-  "MySQL",
-  "Rest API Development"
+  "PHP 8.x & Laravel",
+  "Vue.js & React",
+  "HTML, CSS, JavaScript (jQuery)",
+  "Bootstrap 5",
+  "MySQL / DBMS",
+  "REST API Development"
 ];
 
 const toolsAndTech = [
-  "Git/Github",
-  "DBeaver",
+  "Git & GitHub",
+  "Docker & Podman",
+  "Linux VPS Administration (Ubuntu)",
+  "Web Servers (Nginx)",
+  "DBeaver / phpMyAdmin",
   "Laragon",
-  "AI-assisted Development (Antigravity, ChatGPT, dll)"
+  "Postman (API Testing)",
+  "AI-Assisted Development"
 ];
 </script>
 
