@@ -3,7 +3,7 @@
     <div class="about-header">
       <h2>Profil & Pengalaman</h2>
       <p class="about-intro">
-        Fresh Graduate D3 Teknologi Informasi dengan pengalaman sebagai System Implementor dan Junior Programmer. Memiliki pengalaman dalam pengembangan aplikasi berbasis web menggunakan Laravel serta implementasi sistem di lingkungan client. Terbiasa melakukan analisis kebutuhan, pengujian sistem, serta pelatihan pengguna. Memiliki ketertarikan pada pengembangan sistem logistik dan solusi berbasis teknologi yang efisien.
+        Fresh Graduate D3 Teknologi Informasi dengan pengalaman sebagai System Implementor dan Junior Fullstack Web Developer. Berpengalaman mengembangkan aplikasi web menggunakan Laravel, Vue.js, PostgreSQL, dan REST API, serta implementasi sistem, QA Testing, dan analisis kebutuhan bisnis.
       </p>
     </div>
 
