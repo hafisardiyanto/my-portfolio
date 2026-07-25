@@ -47,6 +47,13 @@ const projects = [
     description: "Aplikasi penyewaan/booking mobil berbasis web yang dilengkapi dengan otomatisasi fitur notifikasi WhatsApp menggunakan API Foonte (Fontee) dan notifikasi Email menggunakan SMTP.",
     tech: "Laravel, MySQL, Bootstrap,JavaScript",
     links: { demo: "http://43.133.157.230:8088" }
+   },
+   {
+    title: "Logistics Boilerplate",
+    role: "Fullstack Developer",
+    description: "Mengembangkan sistem boilerplate komprehensif untuk order management dan operasional logistik. Membangun RESTful API di sisi backend dengan autentikasi berbasis JWT, fungsionalitas Role-Based Access Control (RBAC) dinamis untuk manajemen hak akses per divisi/modul, serta integrasi database yang solid menggunakan Prisma ORM. Mengimplementasikan antarmuka frontend yang responsif untuk mengelola Master Data dan transaksi operasional, serta mendokumentasikan keseluruhan deployment menggunakan kontainerisasi.",
+    tech: "Node.js & Express.js, Prisma ORM, MySQL, Vue.js & Vite, JSON Web Token (JWT), Docker & Podman, Git & RESTful API",
+    links: { demo: "http://43.133.157.230:8093/" }
    }
 ];
 </script>
