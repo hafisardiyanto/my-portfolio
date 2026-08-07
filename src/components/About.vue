@@ -69,6 +69,13 @@
             <a href="https://sertifikasi.lspdigital.id/validasi-sertifikat" target="_blank" class="cert-link cert-link-outline">Cek Validasi</a>
           </div>
         </div>
+        <div class="certification-card">
+          <h4>Backend with NODE JS & Express Bootcamp</h4>
+          <p class="cert-cred"><strong>NusaCodes</strong></p>
+          <div class="cert-links">
+            <a href="https://nusacodes.com/verify/GW1504GI25AD" target="_blank" class="cert-link">Lihat Sertifikat</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
