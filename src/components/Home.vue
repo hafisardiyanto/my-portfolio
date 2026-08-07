@@ -32,7 +32,7 @@
 
 <script setup>
 import hafisPhoto from "../assets/Hafis.jpg";
-import cvPdf from "../assets/Hafis ardiyanto terbaru.pdf";
+import cvPdf from "../assets/Hafis ardiyanto Terbaru.pdf";
 
 defineEmits(['nav']);
 </script>
