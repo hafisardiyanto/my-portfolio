@@ -30,7 +30,7 @@
           <!-- Experience 2 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">2025 – Now</div>
+            <div class="timeline-date">2025 – Now (Agustus)</div>
             <h4 class="timeline-company">CV PilarMedia Indonesia</h4>
             <h5 class="timeline-role">System Implementor / System Analyst</h5>
             <ul class="timeline-desc">
